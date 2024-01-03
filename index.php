@@ -46,25 +46,24 @@
 
             </div>
             <div class="col-md-4">
-              <center><img src="eye2.gif" alt="" style="object-fit:contain; height: 300px; width: 300px;"></center>
+              <center><img src="eye.gif" alt="" style="object-fit:contain; height: 100%; width: 100%;"></center>
             </div>
             <div class="col-md-3">
 
             </div>
           </div>
-          
           <br>
           <div class="row" >
-            <div class="col-md-4">
-                <center><h2>this is right</h2></center>
+            <div class="col-md-2">
+                <center><h2>A</h2></center>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <center>
                   <h2>we have to identify you first</h2>
                 </center>
                 <br><br>
                 <center>
-                  <divs class="col-md-10">
+                  <divs class="col-md-4">
                     <center>
                       <p>War has been a constant presence throughout human history, leaving permanent impacts on communities, civilizations, and individuals alike. It has stirred a plethora of emotions, stimulated philosophical discussions, and offered fertile ground for contemplation as one of the most profound and momentous human experiences. Essays on war, as windows into the human condition, provide a chance to investigate the many facets of armed conflict.
 
@@ -75,13 +74,15 @@
                 </center>
                 
             </div>
-            <div class="col-md-4">
-                <center><h2>this is left</h2></center>
+            <div class="col-md-2">
+                <center><h2>A</h2></center>
             </div>
           </div>
           <br><br><br><br><br><br><br>
         </div>
-        <center><h1>violence witnessed through the prism of technology, yet its essential essence remains immovable. Essays on war investigate the causes that drive nations and people to engage in violence, revealing the complex interplay of political, economic, social, and ideological variables that culminate in these cataclysmic events.</h1></center>
+        <div class="page2">
+          <center><h1>violence witnessed through the prism of technology, yet its essential essence remains immovable. Essays on war investigate the causes that drive nations and people to engage in violence, revealing the complex interplay of political, economic, social, and ideological variables that culminate in these cataclysmic events.</h1></center>
+        </div>
   </div>
   <div id="popup" style="object-fit:cover;">
     <center>
@@ -105,4 +106,5 @@
         }
   </script>
 </body>
+  
 </html>
