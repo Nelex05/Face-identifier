@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "Style.css" />
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
 </head>
 <body>
   <div class="card" id="blur" style="background-color: rgb(255, 251, 251);">
@@ -61,14 +61,11 @@
                 <center>
                   <h2>we have to identify you first</h2>
                 </center>
-                <br><br>
+                <br>
                 <center>
                   <divs class="col-md-4">
                     <center>
-                      <p>War has been a constant presence throughout human history, leaving permanent impacts on communities, civilizations, and individuals alike. It has stirred a plethora of emotions, stimulated philosophical discussions, and offered fertile ground for contemplation as one of the most profound and momentous human experiences. Essays on war, as windows into the human condition, provide a chance to investigate the many facets of armed conflict.
-
-                        The subject of war has continually altered, from ancient battles engraved on stone tablets to modern violence witnessed through the prism of technology, yet its essential essence remains immovable. Essays on war investigate the causes that drive nations and people to engage in violence, revealing the complex interplay of political, economic, social, and ideological variables that culminate in these cataclysmic events.
-                      </p>
+                      <p>please scroll down to connect</p>
                     </center>  
                   </divs>
                 </center>
@@ -80,8 +77,9 @@
           </div>
           <br><br><br><br><br><br><br>
         </div>
-        <div class="page2">
-          <center><h1>violence witnessed through the prism of technology, yet its essential essence remains immovable. Essays on war investigate the causes that drive nations and people to engage in violence, revealing the complex interplay of political, economic, social, and ideological variables that culminate in these cataclysmic events.</h1></center>
+        <div class="card-body" id="page2" style="height: 100%;">
+            <center><h3>please put your face in the box</h3></center>
+            <img src="Background.jpg" alt="" style="width: 100%;background-color: rgb(189, 101, 167);">
         </div>
   </div>
   <div id="popup" style="object-fit:cover;">
