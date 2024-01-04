@@ -1,5 +1,3 @@
-/* update */
-
 /* blur */
 .card.active{
     filter: blur(3px);
@@ -28,9 +26,11 @@
 }
 #body{
     background-image:url('Background.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-color: #ddd;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
 }
 #nav1{
     display: flex;
@@ -75,3 +75,12 @@
 #a1:hover:after{
     width: 100%;
 }
+#page2 {
+    background-color: rgb(189, 101, 167);
+    position: relative;
+    height: 90vh; /* Adjust the height to ensure the second page covers the first */
+    z-index: 1;
+  }
+  h3{
+    background-color: rgb(189, 101, 167);
+  }
