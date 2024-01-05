@@ -76,11 +76,9 @@
     width: 100%;
 }
 #page2 {
-    background-color: rgb(189, 101, 167);
+    background: rgb(118,73,150);
+    background: linear-gradient(90deg, rgba(118,73,150,1) 0%, rgba(187,99,208,1) 35%, rgba(158,106,218,1) 100%);
     position: relative;
-    height: 90vh; /* Adjust the height to ensure the second page covers the first */
+    height: 500px; /* Adjust the height to ensure the second page covers the first */
     z-index: 1;
-  }
-  h3{
-    background-color: rgb(189, 101, 167);
   }
