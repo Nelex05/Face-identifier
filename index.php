@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "style.css" />
+  <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
 <body>
   <div class="card" id="blur" style="background-color: rgb(255, 251, 251);">
@@ -77,9 +77,10 @@
           </div>
           <br><br><br><br><br><br><br>
         </div>
-        <div class="card-body" id="page2" style="height: 100%;">
-            <center><h3>please put your face in the box</h3></center>
-            <img src="Background.jpg" alt="" style="width: 100%;background-color: rgb(189, 101, 167);">
+        <div class="card-body" id="page2" style="height: 700px;">
+        <br><br><br>
+            <center><h3>please face in the box</h3></center>
+            <center><img src="Background.jpg" alt="" style="width: 75%;height: 100%;background-color: rgb(189, 101, 167);"></center>
         </div>
   </div>
   <div id="popup" style="object-fit:cover;">
