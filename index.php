@@ -9,6 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
 <body>
@@ -80,7 +82,9 @@
         <div class="card-body" id="page2" style="height: 700px;">
         <br><br><br>
             <center><h3>please face in the box</h3></center>
-            <center><img src="Background.jpg" alt="" style="width: 75%;height: 100%;background-color: rgb(189, 101, 167);"></center>
+            <center><py-script src="test1.py"></py-script></center>
+            <!-- <center><img src="Background.jpg" alt="" style="width: 75%;height: 100%;background-color: rgb(189, 101, 167);"></center> -->
+
         </div>
   </div>
   <div id="popup" style="object-fit:cover;">
