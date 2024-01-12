@@ -9,8 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
-  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
 <body>
@@ -48,7 +46,7 @@
 
             </div>
             <div class="col-md-4">
-              <center><img src="eye.gif" alt="" style="object-fit:contain; height: 100%; width: 100%;"></center>
+              <center><img src="eye1.gif" alt="" style="object-fit:contain; height: 100%; width: 100%;"></center>
             </div>
             <div class="col-md-3">
 
@@ -79,12 +77,40 @@
           </div>
           <br><br><br><br><br><br><br>
         </div>
-        <div class="card-body" id="page2" style="height: 700px;">
-        <br><br><br>
-            <center><h3>please face in the box</h3></center>
-            <center><py-script src="test1.py"></py-script></center>
-            <!-- <center><img src="Background.jpg" alt="" style="width: 75%;height: 100%;background-color: rgb(189, 101, 167);"></center> -->
-
+        <div id="page2">
+            <br><br><br>
+            <center><h1>Please put you face on camera</h1></center>
+   <br/>
+   <button id="startBtn" onclick="openCam()">Open Webcam</button>
+   <br/><br/>
+   <video id="videoCam"></video>
+   <script>
+      function openCam(){
+         let All_mediaDevices=navigator.mediaDevices
+         if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+            console.log("getUserMedia() not supported.");
+            return;
+         }
+         All_mediaDevices.getUserMedia({
+            audio: true,
+            video: true
+         })
+         .then(function(vidStream) {
+            var video = document.getElementById('videoCam');
+            if ("srcObject" in video) {
+               video.srcObject = vidStream;
+            } else {
+               video.src = window.URL.createObjectURL(vidStream);
+            }
+            video.onloadedmetadata = function(e) {
+               video.play();
+            };
+         })
+         .catch(function(e) {
+            console.log(e.name + ": " + e.message);
+         });
+      }
+   </script>
         </div>
   </div>
   <div id="popup" style="object-fit:cover;">
