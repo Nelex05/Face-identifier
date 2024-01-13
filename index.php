@@ -46,7 +46,7 @@
 
             </div>
             <div class="col-md-4">
-              <center><img src="eye1.gif" alt="" style="object-fit:contain; height: 100%; width: 100%;"></center>
+              <center><img src="eye.gif" alt="" style="object-fit:contain; height: 100%; width: 100%;"></center>
             </div>
             <div class="col-md-3">
 
@@ -80,37 +80,46 @@
         <div id="page2">
             <br><br><br>
             <center><h1>Please put you face on camera</h1></center>
-   <br/>
-   <button id="startBtn" onclick="openCam()">Open Webcam</button>
-   <br/><br/>
-   <video id="videoCam"></video>
-   <script>
-      function openCam(){
-         let All_mediaDevices=navigator.mediaDevices
-         if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
-            console.log("getUserMedia() not supported.");
-            return;
-         }
-         All_mediaDevices.getUserMedia({
-            audio: true,
-            video: true
-         })
-         .then(function(vidStream) {
-            var video = document.getElementById('videoCam');
-            if ("srcObject" in video) {
-               video.srcObject = vidStream;
-            } else {
-               video.src = window.URL.createObjectURL(vidStream);
-            }
-            video.onloadedmetadata = function(e) {
-               video.play();
-            };
-         })
-         .catch(function(e) {
-            console.log(e.name + ": " + e.message);
-         });
-      }
-   </script>
+                <div class="card-body">
+                    <div class="col-md-2">
+                        <center><h2></h2></center>
+                    </div>
+                    <div class="col-md-8">
+                        <center><button id="startBtn" onclick="openCam()">Open Webcam</button></center>
+                        <br/><br/>
+                        <video id="videoCam" style="width: 100%; height: 60%;"></video>
+                        <script>
+                            function openCam(){
+                              let All_mediaDevices=navigator.mediaDevices
+                              if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+                                  console.log("getUserMedia() not supported.");
+                                  return;
+                              }
+                              All_mediaDevices.getUserMedia({
+                                  audio: true,
+                                  video: true
+                              })
+                              .then(function(vidStream) {
+                                  var video = document.getElementById('videoCam');
+                                  if ("srcObject" in video) {
+                                    video.srcObject = vidStream;
+                                  } else {
+                                    video.src = window.URL.createObjectURL(vidStream);
+                                  }
+                                  video.onloadedmetadata = function(e) {
+                                    video.play();
+                                  };
+                              })
+                              .catch(function(e) {
+                                  console.log(e.name + ": " + e.message);
+                              });
+                            }
+                        </script>
+                    </div>
+                    <div class="col-md-2">
+                        <center><h2></h2></center>
+                    </div>
+            </div>
         </div>
   </div>
   <div id="popup" style="object-fit:cover;">
