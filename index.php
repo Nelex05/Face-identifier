@@ -81,6 +81,7 @@
             <br><br><br>
             <center><h1>Please put you face on camera</h1></center>
                 <div class="card-body">
+                  <div class="row" >
                     <div class="col-md-2">
                         <center><h2></h2></center>
                     </div>
@@ -119,6 +120,7 @@
                     <div class="col-md-2">
                         <center><h2></h2></center>
                     </div>
+                </div>
             </div>
         </div>
   </div>
