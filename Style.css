@@ -30,7 +30,7 @@
     position: sticky;
     height: 100vh;
     top: 0;
-    z-index: 0;
+    z-index: 1;
 }
 #nav1{
     display: flex;
@@ -79,6 +79,6 @@
     background: rgb(118,73,150);
     background: linear-gradient(90deg, rgba(118,73,150,1) 0%, rgba(187,99,208,1) 35%, rgba(158,106,218,1) 100%);
     position: relative;
-    height: 500px; /* Adjust the height to ensure the second page covers the first */
-    z-index: 1;
+    height: 100%; /* Adjust the height to ensure the second page covers the first */
+    z-index: 2;
   }
