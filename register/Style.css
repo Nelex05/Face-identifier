@@ -1,0 +1,8 @@
+body{
+    background-image: url('background.jpg');
+    background: url(background.jpg) no-repeat center;
+    background-size: cover;
+}
+.h4{
+    color: aliceblue;
+}
