@@ -75,20 +75,18 @@
                 <center><h2>A</h2></center>
             </div>
           </div>
-          <br><br><br><br><br><br><br>
         </div>
         <div id="page2">
-            <br><br><br>
+            <br><br><br><br><br><br><br>
             <center><h1>Please put you face on camera</h1></center>
-                <div class="card-body">
-                  <div class="row" >
+                <div class="card-body" style="object-fit:contain">
+                  <div class="row">
                     <div class="col-md-2">
                         <center><h2></h2></center>
                     </div>
                     <div class="col-md-8">
                         <center><button id="startBtn" onclick="openCam()">Open Webcam</button></center>
-                        <br/><br/>
-                        <video id="videoCam" style="width: 100%; height: 60%;"></video>
+                        <center><video id="videoCam" style="width: 82%"></video></center>
                         <script>
                             function openCam(){
                               let All_mediaDevices=navigator.mediaDevices
