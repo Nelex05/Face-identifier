@@ -78,7 +78,7 @@
         </div>
         <div id="page2">
             <br><br><br><br><br><br><br>
-            <center><h1>Please put you face on camera</h1></center>
+            <center><h2>Please put you face on camera</h2></center>
                 <div class="card-body" style="object-fit:contain">
                   <div class="row">
                     <div class="col-md-2">
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-8">
                         <center><button id="startBtn" onclick="openCam()">Open Webcam</button></center>
-                        <center><video id="videoCam" style="width: 82%"></video></center>
+                        <center><video id="videoCam" style="width: 83%"></video></center>
                         <script>
                             function openCam(){
                               let All_mediaDevices=navigator.mediaDevices
