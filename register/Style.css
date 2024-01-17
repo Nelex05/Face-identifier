@@ -3,6 +3,11 @@ body{
     background: url(background.jpg) no-repeat center;
     background-size: cover;
 }
-.h4{
-    color: aliceblue;
+#txt{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
