@@ -11,6 +11,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
+<style>
+  .btn1{
+    width: 500px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}
+</style>
 <body>
   <div class="card" id="blur" style="background-color: rgb(255, 251, 251);">
         <div class="card-body" id="body">
@@ -55,7 +65,7 @@
           <br>
           <div class="row" >
             <div class="col-md-2">
-                <center><h2>A</h2></center>
+                <center><h2></h2></center>
             </div>
             <div class="col-md-8">
                 <center>
@@ -72,12 +82,12 @@
                 
             </div>
             <div class="col-md-2">
-                <center><h2>A</h2></center>
+                <center><h2></h2></center>
             </div>
           </div>
         </div>
         <div id="page2">
-            <br><br><br><br><br><br><br>
+            <br><br><br><br>
             <center><h2>Please put you face on camera</h2></center>
                 <div class="card-body" style="object-fit:contain">
                   <div class="row">
@@ -116,7 +126,14 @@
                         </script>
                     </div>
                     <div class="col-md-2">
-                        <center><h2></h2></center>
+                        <br><br>
+                        <div class="input-group">
+                                  <button class="btn1" type="submit" class="btn btn-primary">Close</button>
+                        </div>
+                        <div class="input-group">
+                                  <button class="btn1" type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                      
                     </div>
                 </div>
             </div>
