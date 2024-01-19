@@ -43,7 +43,6 @@
 .sign{
     width: 500px;
     margin-top: 20px;
-    
     border: none;
     background-color: #49c1a2;
     color: white;
