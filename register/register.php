@@ -84,7 +84,6 @@ a:link, a:visited {
                             <div class="input-group">
                                 <button class="sign" type="submit" class="btn btn-primary">Next</button>
                             </div>
-                            
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
                             </div> -->
