@@ -103,7 +103,6 @@ a:link, a:visited {
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
                             </div> -->
-                            
                             <br>
                         </form>
                     </div>
