@@ -81,4 +81,22 @@
     position: relative;
     height: 100%; /* Adjust the height to ensure the second page covers the first */
     z-index: 2;
-  }
+}
+
+/* REGISTER BUTTON */
+
+#b1{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+#b1:hover{
+    color:rgb(255, 255, 255);
+}
+#b1:hover:after{
+    width: 100%;
+}
