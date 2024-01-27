@@ -40,8 +40,8 @@
     position: relative;
     color: rgb(255, 255, 255);
 }
-.sign{
-    width: 500px;
+.btn1{
+    width: 280px;
     margin-top: 20px;
     border: none;
     background-color: #49c1a2;
@@ -49,10 +49,8 @@
     font-size: 18px;
 }
 a:link, a:visited {
-    position: relative;
-    background-color: #4CAF50;
-    color: rgb(255, 255, 255);
-    left: 155px;
+    background-color: none;
+    color: rgb(122, 57, 106);
     padding: 1px 15px;
     text-align: center;
     text-decoration: none;
@@ -77,13 +75,23 @@ a:link, a:visited {
                                 <input type="text" class="form-control" id="usr" name="username">
                             </div>
                             <div class="input-group">
-                                <label class="pwd" for="pwd">Password:</label>
-                                <input type="password" class="form-control" id="pwd" name="password">
+                                    <label class="pwd" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" name="password">
                             </div>
                             <br>
-                            <div class="input-group">
-                                <button class="sign" type="submit" class="btn btn-primary">Back</button>
-                            </div>
+                                <center>
+                                    <div class="btn-group" >
+                                    <div class="col-md-1" style="margin-left: -9px;">
+                                            <button class="btn1" type="submit" class="btn btn-primary">Next</button>
+                                    </div>
+                                </center>
+                                <center>
+                                    <div class="btn-group" >
+                                    <div class="col-md-1" style="margin-left: 0px;">
+                                            <a href="index.php/../..">cancel</a>
+                                    </div>
+                                </center>
+                                
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
                             </div> -->
