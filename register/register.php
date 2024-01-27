@@ -82,7 +82,7 @@ a:link, a:visited {
                             </div>
                             <br>
                             <div class="input-group">
-                                <button class="sign" type="submit" class="btn btn-primary">Next</button>
+                                <button class="sign" type="submit" class="btn btn-primary">Back</button>
                             </div>
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
