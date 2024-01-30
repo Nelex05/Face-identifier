@@ -91,7 +91,6 @@ a:link, a:visited {
                                             <a href="index.php/../..">cancel</a>
                                     </div>
                                 </center>
-                                
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
                             </div> -->
