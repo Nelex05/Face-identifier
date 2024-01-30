@@ -20,6 +20,14 @@
     color: white;
     font-size: 18px;
 }
+.btn3{
+    width: 500px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}
 </style>
 <body>
   <div class="card" id="blur" style="background-color: rgb(255, 251, 251);">
@@ -95,7 +103,7 @@
                         <center><h2></h2></center>
                     </div>
                     <div class="col-md-8">
-                        <center><button id="startBtn" onclick="openCam()">Open Webcam</button></center>
+                        <center><button id="btn3" type="submit" class="btn btn-primary" onclick="openCam()"><a class="nav-link" id="b1" href="#">Open Cam</a></button></center>
                         <center><video id="videoCam" style="width: 83%"></video></center>
                         <script>
                             function openCam(){
@@ -122,17 +130,23 @@
                               .catch(function(e) {
                                   console.log(e.name + ": " + e.message);
                               });
+                              function openCam() {
+                                btn3.remove();
+                                var removeBlur = document.getElementById('btn3');
+                                removeBlur.classList.remove('btn btn-primary');
+                              }
                             }
                         </script>
                     </div>
                     <div class="col-md-2">
                         <br><br>
                         <div class="input-group">
-                        <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="register/register.php">Close</a></button>
+                                  <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="#">Close</a></button>
                         </div>
                         <div class="input-group">
                                   <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="register/register.php">Register</a></button>
                         </div>
+                      
                     </div>
                 </div>
             </div>
