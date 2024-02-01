@@ -24,6 +24,5 @@ while True:
     cv2.imshow("Faces", frame)
     if cv2.waitKey(1) == ord("q"):
         break
-
 camera.release()
 cv2.destroyAllWindows()
