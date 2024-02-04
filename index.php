@@ -173,5 +173,6 @@
           removeBlur.classList.remove('card');
         }
   </script>
+  
 </body>
 </html>
