@@ -99,7 +99,6 @@ a:link, a:visited {
                     </div>
                 </div>
             </div>
-            
             <div class="col-md-4">
 
             </div>
