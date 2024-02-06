@@ -103,7 +103,7 @@
                         <center><h2></h2></center>
                     </div>
                     <div class="col-md-8">
-                        <center><button id="btn3" type="submit" class="btn btn-primary" onclick="openCam()"><a class="nav-link" id="b1" href="#">Open Cam</a></button></center>
+                        <center><button id="btn3" type="submit" class="btn btn-primary" onclick="openCam()">Open Cam</button></center>
                         <center><video id="videoCam" style="width: 83%"></video></center>
                         <script>
                             function openCam(){
@@ -130,10 +130,13 @@
                               .catch(function(e) {
                                   console.log(e.name + ": " + e.message);
                               });
-                              function openCam() {
-                                btn3.remove();
-                                var removeBlur = document.getElementById('btn3');
-                                removeBlur.classList.remove('btn btn-primary');
+                              var x = document.getElementById("btn3");
+
+                              if(x.style.display === "none"){
+                                  x.style.display = "block";
+                              }
+                              else{
+                                x.style.display = "none";
                               }
                             }
                         </script>
@@ -141,7 +144,7 @@
                     <div class="col-md-2">
                         <br><br>
                         <div class="input-group">
-                                  <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="#">Close</a></button>
+                                  <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="index.php">Close</a></button>
                         </div>
                         <div class="input-group">
                                   <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="register/register.php">Register</a></button>
@@ -152,27 +155,5 @@
             </div>
         </div>
   </div>
-  <div id="popup" style="object-fit:cover;">
-    <center>
-        <h2>Hello Creator</h2>
-        <p>NICE TO SEE YOU AGAIN</p>
-        <a href="#" onclick="myToggle()">Close</a>
-    </center>
-  </div>
-  <script type="text/javascript">
-        window.onload = function() {
-            
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active');
-        var popup = document.getElementById('popup');
-        popup.classList.toggle('active');
-        }
-        function myToggle(){
-          popup.remove();
-          var removeBlur = document.getElementById('blur');
-          removeBlur.classList.remove('card');
-        }
-  </script>
-  
 </body>
 </html>
