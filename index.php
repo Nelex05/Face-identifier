@@ -149,7 +149,6 @@
                         <div class="input-group">
                                   <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="register/register.php">Register</a></button>
                         </div>
-                      
                     </div>
                 </div>
             </div>
