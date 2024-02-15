@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "style1.css" />
+  <link rel = "stylesheet" type = "text/css" href = "Style1.css" />
 </head>
 <style>
   .btn1{
@@ -83,7 +83,7 @@
                 <center>
                   <divs class="col-md-4">
                     <center>
-                      <p>please scroll down to connect</p>
+                      <p id="p">please scroll down to connect</p>
                     </center>  
                   </divs>
                 </center>
@@ -149,6 +149,7 @@
                         <div class="input-group">
                                   <button class="btn1" type="submit" class="btn btn-primary"><a class="nav-link" id="b1" href="register/register.php">Register</a></button>
                         </div>
+                      
                     </div>
                 </div>
             </div>
