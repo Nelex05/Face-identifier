@@ -81,8 +81,14 @@ a:link, a:visited {
                             <br>
                                 <center>
                                     <div class="btn-group" >
-                                    <div class="col-md-1" style="margin-left: -9px;">
-                                            <button class="btn1" type="submit" class="btn btn-primary">Next</button>
+                                        <div class="col-md-1" style="margin-left: -9px;">
+                                            <button class="btn1" type="submit" class="btn btn-primary">
+                                                <span class="circle">
+                                                    <span class="arrow"></span>
+                                                </span>
+                                                <span class="text">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </center>
                                 <center>
@@ -91,6 +97,7 @@ a:link, a:visited {
                                             <a href="index.php/../..">cancel</a>
                                     </div>
                                 </center>
+                                
                             <!-- <div class="input-group">
                                 <input type="button" value="Submit" />
                             </div> -->
