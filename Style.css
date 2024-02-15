@@ -24,6 +24,12 @@
     opacity: 1;
     transition: 0.5s;
 }
+h2{
+    color: rgb(255, 255, 255);
+}
+#p{
+    color: rgb(255, 255, 255);
+}
 #body{
     background-image:url('Background.jpg');
     background-color: #ddd;
@@ -42,6 +48,7 @@
     margin: auto;
 }
 #a1{
+    
     position: relative;
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
@@ -76,9 +83,13 @@
     width: 100%;
 }
 #page2 {
-    background: rgb(118,73,150);
-    background: linear-gradient(90deg, rgba(118,73,150,1) 0%, rgba(187,99,208,1) 35%, rgba(158,106,218,1) 100%);
-    position: relative;
+    background-image:url('Background7.jpg');
+    background-color: #ddd;
+    position: sticky;
+    height: 100vh;
+    /* background: rgb(190, 130, 233);
+    background: linear-gradient(90deg, rgb(179, 133, 209) 0%, rgb(182, 116, 199) 35%, rgb(158, 106, 218) 100%);
+    position: relative; */
     height: 100%; /* Adjust the height to ensure the second page covers the first */
     z-index: 2;
 }
@@ -92,6 +103,7 @@
     color: antiquewhite;
     font-size: 18px;
     letter-spacing: 1px;
+
 }
 #b1:hover{
     color:rgb(255, 255, 255);
