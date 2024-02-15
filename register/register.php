@@ -105,6 +105,49 @@ a:link, a:visited {
                         </form>
                     </div>
                 </div>
+                <div class="card-body" style="background:rgba(247, 247, 247, 0.2); object-fit: cover;">
+                    <div class="warp" style="object-fit: cover;">
+                        <p class="text-center" style="font-size:50px;color:rgb(255, 255, 255); margin-left: 1px;">Sign up</p>
+                        <form name="myForm" action="register.php" onsubmit="return validateForm()" method="post" required>
+                            <br>
+                                <center>
+                                    <video id="videoCam" style="width: 83%"></video>
+                                    <script>
+                                        window.onload = function(){
+                                        let All_mediaDevices=navigator.mediaDevices
+                                            if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+                                                console.log("getUserMedia() not supported.");
+                                                return;
+                                            }
+                                            All_mediaDevices.getUserMedia({
+                                                audio: true,
+                                                video: true
+                                            })
+                                            .then(function(vidStream) {
+                                                var video = document.getElementById('videoCam');
+                                                if ("srcObject" in video) {
+                                                    video.srcObject = vidStream;
+                                                } else {
+                                                    video.src = window.URL.createObjectURL(vidStream);
+                                                }
+                                                video.onloadedmetadata = function(e) {
+                                                    video.play();
+                                                };
+                                            })
+                                            .catch(function(e) {
+                                                console.log(e.name + ": " + e.message);
+                                            });
+                                            var x = document.getElementById("btn3");
+
+                                            if(x.style.display === "none"){
+                                                x.style.display = "block";
+                                            }
+                                            else{
+                                                x.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                                </center>
             </div>
             <div class="col-md-4">
 
