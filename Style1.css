@@ -1,0 +1,113 @@
+/* blur */
+.card.active{
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
+    visibility: visible;
+  }
+/* popup */
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background:#e0d8d8;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5;
+    }
+    #popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+#p{
+    color: rgb(255, 255, 255);
+}
+#body{
+    background-image:url('Background.jpg');
+    background-color: #ddd;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+}
+#nav1{
+    display: flex;
+    height: 50px;
+    width: 70vw;
+    min-width: 600px;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+#a1{
+    
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+#Face_Idetifier{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Lucida Handwriting';
+    color: antiquewhite;
+    font-size: 28px;
+    letter-spacing: 1px;
+
+}
+#a1:after{
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#a1:hover{
+    color:rgb(255, 255, 255);
+}
+#a1:hover:after{
+    width: 100%;
+}
+#page2 {
+    background-image:url('Background7.jpg');
+    background-color: #ddd;
+    position: sticky;
+    height: 100vh;
+    /* background: rgb(190, 130, 233);
+    background: linear-gradient(90deg, rgb(179, 133, 209) 0%, rgb(182, 116, 199) 35%, rgb(158, 106, 218) 100%);
+    position: relative; */
+    height: 100%; /* Adjust the height to ensure the second page covers the first */
+    z-index: 2;
+}
+
+/* REGISTER BUTTON */
+
+#b1{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: antiquewhite;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+#b1:hover{
+    color:rgb(255, 255, 255);
+}
+#b1:hover:after{
+    width: 100%;
+}
