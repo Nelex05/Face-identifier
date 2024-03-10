@@ -81,16 +81,15 @@ a:link, a:visited {
                             <br>
                             <center>
                                 <div class="btn-group">
-                                    <div class="col-md-1" style="margin-left: -9px;">
-                                        <button class="btn1" type="submit" class="btn btn-primary">
-                                                <a class="circle" href="face_registration.php">
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <a href="face_registration.php" class="text">
-                                                    <span class="text">Next</span>
-                                                </a>
-                                        </button>
-                                    </div>
+                                    <a class="text" href="face_registration.php">
+                                        <div class="col-md-1" style="margin-left: -20px;">
+                                             <button class="btn1" type="submit" class="btn btn-primary">
+                                                <span class="arrow"></span>
+                                                <span class="txt">Next</span>
+                                                <span class="circle"></span>
+                                             </button>
+                                        </div>
+                                    </a>
                                 </div> 
                             </center>
                             
