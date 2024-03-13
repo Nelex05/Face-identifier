@@ -69,7 +69,7 @@ a:link, a:visited {
                 <div class="card-body" style="background:rgba(247, 247, 247, 0.2); object-fit: cover;">
                     <div class="warp" style="object-fit: cover;">
                         <p class="text-center" style="font-size:50px;color:rgb(255, 255, 255); margin-left: 1px;">Sign up</p>
-                        <form name="myForm" action="data/registerdata.php" onsubmit="return validateForm()" method="post" required>
+                        <form name="myForm" action="registerdata.php" onsubmit="return validateForm()" method="post" required>
                             <div class="input-group">
                                 <label class="usr" for="usr">Name:</label>
                                 <input type="text" class="form-control" id="usr" name="username">
@@ -81,7 +81,7 @@ a:link, a:visited {
                             <br>
                             <center>
                                 <div class="btn-group">
-                                    <a class="text" href="face_registration.php">
+                                    <a class="text" href="">
                                         <div class="col-md-1" style="margin-left: -20px;">
                                              <button class="btn1" type="submit" class="btn btn-primary">
                                                 <span class="arrow"></span>
