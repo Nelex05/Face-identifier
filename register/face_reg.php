@@ -81,12 +81,20 @@
                 <div class="col-md-6">
                     <div class="card-body" style="background:rgba(247, 247, 247, 0.2); object-fit: cover;">
                         <div class="warp" style="object-fit: cover;">
-                            <form name="myForm" action="face_registration.php" onsubmit="return validateForm()" method="post" required>
+                            <form name="myForm" action="index.php/../.." onsubmit="return validateForm()" method="post" required>
                                     <center>
                                         <h4 style="color: antiquewhite;">Please face the Camera</h4>
                                         <video id="video" width="500" height="500" autoplay></video>
                                         <br><br>
-                                        <a href="register.php">cancel</a>
+                                            <div class="btn-group" id="col">
+                                                <a class="text" href="index.php/../..">
+                                                    <div class="col-md-1" style="margin-left: -20px;">
+                                                            <button class="btn1" type="submit" class="btn btn-primary">
+                                                            <span class="txt">Done</span>
+                                                            </button>
+                                                    </div>
+                                                </a>
+                                            </div> 
                                     </center>
                 </div> 
             </div>
@@ -122,7 +130,10 @@
                     faceapi.matchDimensions(canvas, displaySize);
 
                     setTimeout(async () => {
-                        const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions();
+                        const detections = await faceapi.detectAllFaces(video, new faceapi
+                            .TinyFaceDetectorOptions())
+                            .withFaceLandmarks()
+                            .withFaceExpressions();
                         const resizedDetections = faceapi.resizeResults(detections, displaySize);
                         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
                         faceapi.draw.drawDetections(canvas, resizedDetections);
